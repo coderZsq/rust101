@@ -12,6 +12,7 @@
 | [3 common_concepts](projects/3%20common_concepts/) | Ch.3 | 基础语法全景 | 不可变是默认，`if`/`loop` 是表达式，分号改变语义 |
 | [4 ownership](projects/4%20ownership/) | Ch.4 | 所有权系统 | **Rust 的灵魂** — 用编译期规则替代 GC |
 | [5 structs](projects/5%20structs/) | Ch.5 | 结构体与方法 | 数据和行为分离，`impl` 块定义方法 |
+| [6 enums_matching](projects/6%20enums_matching/) | Ch.6 | 枚举与模式匹配 | 用 `enum` 表达状态空间，用 `match` 穷举处理分支 |
 
 ## 学习路径
 
@@ -22,10 +23,14 @@ hello_world  →  hello_cargo  →  guessing_game
               structs  ←  ownership  ←  common_concepts
                   │
                   ▼
-           (lifetimes, enums, pattern matching...)
+          enums_matching
+                  │
+                  ▼
+         (lifetimes, traits, generics...)
 ```
 
 - **Ch.1-2**：学会搭建环境和写能跑的程序
 - **Ch.3**：掌握 Rust 基础语法（变量、类型、函数、控制流）
 - **Ch.4 Ownership**：这是分水岭 — 理解了它，后面的生命周期、trait、并发才能顺理成章
 - **Ch.5 Structs**：开始组织自定义数据类型，为 enum、trait、泛型打基础
+- **Ch.6 Enums & Matching**：开始用类型表达"有限状态"和"分支逻辑"，这是理解 `Option`、`Result` 和模式匹配的关键一步
