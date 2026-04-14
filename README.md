@@ -13,6 +13,7 @@
 | [4 ownership](projects/4%20ownership/) | Ch.4 | 所有权系统 | **Rust 的灵魂** — 用编译期规则替代 GC |
 | [5 structs](projects/5%20structs/) | Ch.5 | 结构体与方法 | 数据和行为分离，`impl` 块定义方法 |
 | [6 enums_matching](projects/6%20enums_matching/) | Ch.6 | 枚举与模式匹配 | 用 `enum` 表达状态空间，用 `match` 穷举处理分支 |
+| [7 package_crates_modules](projects/7%20package_crates_modules/) | Ch.7 | 包、Crate 与模块 | 模块是可见性边界，`use` 只是路径别名 |
 
 ## 学习路径
 
@@ -26,6 +27,9 @@ hello_world  →  hello_cargo  →  guessing_game
           enums_matching
                   │
                   ▼
+    package_crates_modules
+                  │
+                  ▼
          (lifetimes, traits, generics...)
 ```
 
@@ -34,3 +38,4 @@ hello_world  →  hello_cargo  →  guessing_game
 - **Ch.4 Ownership**：这是分水岭 — 理解了它，后面的生命周期、trait、并发才能顺理成章
 - **Ch.5 Structs**：开始组织自定义数据类型，为 enum、trait、泛型打基础
 - **Ch.6 Enums & Matching**：开始用类型表达"有限状态"和"分支逻辑"，这是理解 `Option`、`Result` 和模式匹配的关键一步
+- **Ch.7 Package, Crates & Modules**：掌握 Rust 的代码组织方式 — 模块系统、可见性控制、以及如何用 Cargo 管理外部依赖
