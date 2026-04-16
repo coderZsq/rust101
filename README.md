@@ -15,6 +15,7 @@
 | [6 enums_matching](projects/6%20enums_matching/) | Ch.6 | 枚举与模式匹配 | 用 `enum` 表达状态空间，用 `match` 穷举处理分支 |
 | [7 package_crates_modules](projects/7%20package_crates_modules/) | Ch.7 | 包、Crate 与模块 | 模块是可见性边界，`use` 只是路径别名 |
 | [8 common_collections](projects/8%20common_collections/) | Ch.8 | 常用集合 | Vec、String、HashMap 与所有权规则在堆上的应用 |
+| [9 error_handling](projects/9%20error_handling/) | Ch.9 | 错误处理 | `panic!` vs `Result`，`?` 运算符与类型约束 |
 
 ## 学习路径
 
@@ -34,6 +35,9 @@ hello_world  →  hello_cargo  →  guessing_game
          common_collections
                   │
                   ▼
+           error_handling
+                  │
+                  ▼
          (lifetimes, traits, generics...)
 ```
 
@@ -44,3 +48,4 @@ hello_world  →  hello_cargo  →  guessing_game
 - **Ch.6 Enums & Matching**：开始用类型表达"有限状态"和"分支逻辑"，这是理解 `Option`、`Result` 和模式匹配的关键一步
 - **Ch.7 Package, Crates & Modules**：掌握 Rust 的代码组织方式 — 模块系统、可见性控制、以及如何用 Cargo 管理外部依赖
 - **Ch.8 Common Collections**：深入 Vec、String 和 HashMap — 它们都分配在堆上，动态增长，是日常开发最核心的三个容器类型
+- **Ch.9 Error Handling**：Rust 没有异常机制，只有 `panic!` 和 `Result`。掌握 `?` 运算符、错误传播策略，以及如何用类型系统把"非法状态"变为"不可表示状态"
