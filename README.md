@@ -17,6 +17,7 @@
 | [8 common_collections](projects/8%20common_collections/) | Ch.8 | 常用集合 | Vec、String、HashMap 与所有权规则在堆上的应用 |
 | [9 error_handling](projects/9%20error_handling/) | Ch.9 | 错误处理 | `panic!` vs `Result`，`?` 运算符与类型约束 |
 | [10 generic_type_traits_lifetimes](projects/10%20generic_type_traits_lifetimes/) | Ch.10 | 泛型、Trait 与生命周期 | 零成本抽象：泛型单态化、trait 多态、生命周期验证引用安全 |
+| [11 automated_tests](projects/11%20automated_tests/) | Ch.11 | 自动化测试 | `#[test]` + `assert!` + `cargo test`，内置测试框架无需第三方依赖 |
 
 ## 学习路径
 
@@ -40,6 +41,9 @@ hello_world  →  hello_cargo  →  guessing_game
                   │
                   ▼
       generic_type_traits_lifetimes
+                  │
+                  ▼
+           automated_tests
 ```
 
 - **Ch.1-2**：学会搭建环境和写能跑的程序
@@ -51,3 +55,4 @@ hello_world  →  hello_cargo  →  guessing_game
 - **Ch.8 Common Collections**：深入 Vec、String 和 HashMap — 它们都分配在堆上，动态增长，是日常开发最核心的三个容器类型
 - **Ch.9 Error Handling**：Rust 没有异常机制，只有 `panic!` 和 `Result`。掌握 `?` 运算符、错误传播策略，以及如何用类型系统把"非法状态"变为"不可表示状态"
 - **Ch.10 Generic Types, Traits & Lifetimes**：Rust 抽象能力的集大成者——泛型让你写一次代码到处复用，trait 定义可组合的行为契约，生命周期在编译期保证引用永远合法。三者结合构成了 Rust "零成本抽象"的核心
+- **Ch.11 Automated Tests**：Rust 内置测试框架——`#[test]` 标注即测试，`assert!` 系列宏验证结果，`cargo test` 一键运行。单元测试、集成测试、`should_panic`、`Result` 返回值测试一应俱全
